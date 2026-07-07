@@ -1,27 +1,164 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
+.nav-item{
+    margin-right: 20px;
+    font-size: 16px;
+    font-style: lanto,sans-serif;
+}
+.container{
+    
+    margin: 0 auto;
+    padding: 15px;
+}
 .card-img-overlay{
     padding: 30px;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 0%;
 }
 
 .card-img-overlay h6{
     font-size: 50px;
 }
 
-.card{
-    position: relative;
+/* HERO */
+
+.hero{
+    position:relative;
+    width:100%;
+    height:750px;
+    overflow:hidden;
 }
 
-.card img{
-    width: 100%;
-    min-height: 550px;
+.hero-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(45%);
 }
 
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px 20px 40px;
+}
+
+/* CONTENT */
+
+.hero-content{
+    text-align:center;
+    color:#fff;
+    max-width:800px;
+    margin-bottom:0px;
+}
+
+.hero-content h1{
+    font-size:55px;
+    font-weight:bold;
+    margin-bottom:20px;
+    font-family: 'Playfair Display';
+}
+
+.hero-content p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:35px;
+    font-family: 'Lato';
+    font-weight: 100;
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn-book{
+    padding:14px 34px;
+    border-radius:50px;
+    background:#b79b69;
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    border:2px solid #b79b69;
+    transition:.4s;
+}
+
+.btn-book:hover{
+    background:#a89261;
+}
+
+.btn-camp{
+    padding:14px 34px;
+    border-radius:50px;
+    color:#fff;
+    border:2px solid #fff;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.4s;
+}
+
+.btn-camp:hover{
+    background:#fff;
+    color:#000;
+}
+
+/* SERVICE BOXES */
+
+.type{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.type1{
+    width:250px;
+    height:200px;
+    background:#b7a47a;
+    border-radius:25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    transition:.4s;
+}
+
+.type1:hover{
+    transform:translateY(-10px);
+    background:#a99566;
+}
+
+.type1 img{
+    width:65px;
+    height:65px;
+    object-fit:contain;
+    margin-bottom:25px;
+}
+
+.type1 h4{
+    color:white;
+    font-size:20px;
+    text-align:center;
+    letter-spacing:1px;
+    font-style: bold;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+
+}
 .about{
     display: flex;
     flex-direction: row;
@@ -46,60 +183,163 @@
 
 .content{
     padding: 20px;
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
+}
+.content p{
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: justify;
+    font-style: bold;
 }
 
+
+
 .content h6{
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 48px;
+    margin-bottom: 20px;    
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    
     
 }
 
-.btn9{
-    background-color: #9b8a60;
-    color: #000000;
-    border-radius: 0px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.bb{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
 }
+
+.btn10{
+    padding:14px 34px;
+    border-radius:50px;
+    background:#b79b69;
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    border:2px solid #b79b69;
+    transition:.4s;
+}
+
+.btn10:hover{
+    background:#a89261;
+}
+
+
+
+
+
+
 
 .gatway{
     text-align: center;
     margin-top: 50px;
+    color: #fff;    
 
+}
+
+.gatway h6{
+    font-size: 48px;
+    margin-bottom: 20px;    
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    
 }
 .services{
     background-color:  #9b8a60;
 }
-
-.card{
-    height: 100%;
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    transition: 0.3s;
+.camping-section{
+    padding:70px 0;
 }
 
-.card:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+.camp-card{
+    position:relative;
+    overflow:hidden;
+    height:500px;
+    cursor:pointer;
 }
 
-.card img{
-    height: 220px;
-    object-fit: cover;
-    border-radius: 12px 12px 0 0;
+.camp-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
 }
 
-.card-body{
-    text-align: center;
+.camp-card:hover img{
+    transform:scale(1.08);
 }
 
+.overlay1{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    align-items:center;
+    padding:px;
+    text-align:center;
+    color:#fff;
+    background:linear-gradient(to top,
+        rgba(0,0,0,.8),
+        rgba(0,0,0,.5),
+        transparent);
+}
+
+.overlay1 h3{
+    margin:0 0 15px;
+    font-size:32px;
+    font-weight:700;
+}
+
+.overlay1 p{
+    margin:0;
+    font-size:18px;
+}
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.camp-card{
+    height:450px;
+}
+
+.overlay1 h3{
+    font-size:28px;
+}
+
+.overlay1 p{
+    font-size:17px;
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.camp-card{
+    height:380px;
+}
+
+.overlay1{
+    padding:20px;
+}
+
+.overlay11 h3{
+    font-size:24px;
+}
+
+.overlay1 p{
+    font-size:15px;
+}
+
+}
 
 @media (max-width: 426px) {
     .card-img-overlay h6{
@@ -112,6 +352,44 @@
 
     .about{
         flex-direction: column;
+
     }
+
+    .content{
+        width: 100%;
+    }
+
+     
+
+
+
+
+
 }
 
+@media screen and (max-width: 1024px) {
+
+    .type{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    .type1{
+        width: 200px;
+        height: 170px;
+    }
+
+}
+
+
+@media screen and (max-width: 769px) {
+
+           .type{
+            margin-top: 30px;
+
+           }
+
+
+}
